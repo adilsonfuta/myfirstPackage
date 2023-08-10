@@ -1,5 +1,5 @@
 {
-  "name": "myfirstpackage",
+  "name": "@adilsonfuta/myfirstpackage",
   "version": "1.0.0",
   "description": "TypeScript NPM Github Packages",
   "main": "dist/index.js",
