@@ -1,10 +1,10 @@
-import { equal } from 'assert';
-import { helloWorld } from './../src';
-import { expect } from 'chai';
+// import { equal } from 'assert';
 
-describe('helloWorld', ()=>{
-it('should return greetings', ()=>{
-    expect(helloWorld).equals('Adilson Futa');
-});
+import { helloWorld } from './../src'
+import { expect } from 'chai'
 
+describe('helloWorld', () => {
+    it('Should return greetings', () => {
+        expect(helloWorld()).equals('Adilson Futa')
+    })
 })
