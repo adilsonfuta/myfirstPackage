@@ -14,11 +14,10 @@
   "github packages",
   "npm packages",
   "boilerplate"],
-  "author": "https://github.com/adilsonfuta/",
+  "author": "Adilson Futa",
   "license": "ISC",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adilsonfuta/myfirstPackage.git"
+    "url": "https://github.com/adilsonfuta/myfirstPackage"
   },
   "devDependencies": {
     "@types/chai": "^4.2.22",
