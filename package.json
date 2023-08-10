@@ -1,14 +1,40 @@
 {
   "name": "myfirstpackage",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TypeScript NPM Github Packages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"",
-    "deploy":"npm publish"
+    "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
+    "build": "tsc",
+    "deploy":"npm publish"  
   },
-  "keywords": [],
+  "keywords": [ 
+     "typescript",
+  "github packages",
+  "npm packages",
+  "boilerplate"],
   "author": "https://github.com/adilsonfuta/",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilsonfuta/myfirstPackage.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.10.2",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "tslint": "^6.1.3",
+    "ts-node": "^10.2.1",
+    "typescript": "~4.4.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@adilsonfuta"
+  }
 }
